@@ -6,7 +6,7 @@ from . import views
 app_name="sitepages"
 
 urlpatterns = [
-    path('', views.Home, name= "home"),
+    path('', views.Index, name= "index"),
     path('about/', views.About, name= "about"),
     path('service/', views.Service, name= "service"),
     path('contact/', views.Contact, name= "contact"),

@@ -3,24 +3,21 @@ from .models import Post
 
 
 
-def Home(request):
+def Index(request):
     featured_post = Post.objects.all().filter(category=0)[:1]
     django_post = Post.objects.all().filter(fram=0)[:2]
     flask_post = Post.objects.all().filter(fram=1)[:2]
     data={"featured_post": featured_post, 'django_post':django_post, 'flask_post': flask_post}
-    return render (request,"sitepages/home.html", data)
+    return render (request,"sitepages/index.html", data)
 
 def About(request):
-    data={"ptitle": "Meals order & bookings - Home Page"}
-    return render (request,"sitepages/about.html", data)
+    return render (request,"sitepages/about.html")
 
 def Service(request):
-    data={"ptitle": "Meals order & bookings - Home Page"}
-    return render (request,"sitepages/service.html", data)
+    return render (request,"sitepages/service.html")
 
 def Contact(request):
-    data={"ptitle": "Meals order & bookings - Home Page"}
-    return render (request,"sitepages/contact.html", data)
+    return render (request,"sitepages/contact.html")
 
 def Latest(request):
     featured_post = Post.objects.all().filter(category=0)[:1]
