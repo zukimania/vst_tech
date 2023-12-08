@@ -1,0 +1,157 @@
+{%extends 'sitepages/base.html'%}
+
+{%load static%} 
+{% block title %}Our Vision{% endblock %}
+
+{%block aboutpage_content%}
+
+       
+      <!-- Project Start -->
+         <style>
+
+    .card {
+      margin: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: scale(1.02);
+      color: light-green;
+    }
+
+    .card-header {
+      background-color: #007bff;
+      color: #ffffff;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+    }
+
+    .card-body {
+      padding: 20px;
+    }
+</style>
+       <div class="container">
+
+    <div class="text-center mx-auto pb-5 wow fadeIn " data-wow-delay=".3s" style="max-width: 600px;">
+                    <h5 class="text-primary fs-3 mt-5">Our Vision</h5>
+                </div>
+  <div class="card">
+    <div class="card-body"><i class="bi bi-bullseye fs-2"></i>
+      <h5 class="card-title text-secondary">Our Vision</h5>
+      <p class="card-text">Adding values to lives, being the No 1 in IT World, and creating platforms to make work smarter and life better.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-body"><i class="bi bi-dice-3 fs-2"></i>
+      <h5 class="card-title text-secondary">Mission</h5>
+      <p class="card-text">A foremost indigenous started organization, truly committed to honoring God in all our business endeavors, deploying cutting-edge technology to assist our clients develop positively and profitably.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-body"><i class="bi bi-slack fs-2"></i>
+      <h5 class="card-title text-secondary">Slogan</h5>
+      <p class="card-text">Moving you to greater heights</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-body"><i class="bi bi-sliders fs-2"></i>
+      <h5 class="card-title text-secondary">Core Values</h5>
+      <p class="card-text">Integrity, Transparency, Resilience, Empathy, Humility</p>
+    </div>
+  </div>
+</div>
+        {% comment %} <div class="container-fluid project py-5 mb-5">
+            <div class="container">
+                <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
+                    <h5 class="text-primary">Our Project</h5>
+                    <h1>Our Recently Completed Projects</h1>
+                </div>
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
+                        <div class="project-item">
+                            <div class="project-img">
+                                <img src="{%static 'img/project-1.jpg' %}" class="img-fluid w-100 rounded" alt="">
+                                <div class="project-content">
+                                    <a href="#" class="text-center">
+                                        <h4 class="text-secondary">Web design</h4>
+                                        <p class="m-0 text-white">Web Analysis</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
+                        <div class="project-item">
+                            <div class="project-img">
+                                <img src="{%static 'img/project-2.jpg' %}" class="img-fluid w-100 rounded" alt="">
+                                <div class="project-content">
+                                    <a href="#" class="text-center">
+                                        <h4 class="text-secondary">Cyber Security</h4>
+                                        <p class="m-0 text-white">Cyber Security Core</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
+                        <div class="project-item">
+                            <div class="project-img">
+                                <img src="{%static 'img/project-3.jpg' %}" class="img-fluid w-100 rounded" alt="">
+                                <div class="project-content">
+                                    <a href="#" class="text-center">
+                                        <h4 class="text-secondary">Mobile Info</h4>
+                                        <p class="m-0 text-white">Upcomming Phone</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
+                        <div class="project-item">
+                            <div class="project-img">
+                                <img src="{%static 'img/project-4.jpg' %}" class="img-fluid w-100 rounded" alt="">
+                                <div class="project-content">
+                                    <a href="#" class="text-center">
+                                        <h4 class="text-secondary">Web Development</h4>
+                                        <p class="m-0 text-white">Web Analysis</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
+                        <div class="project-item">
+                            <div class="project-img">
+                                <img src="{%static 'img/project-5.jpg' %}" class="img-fluid w-100 rounded" alt="">
+                                <div class="project-content">
+                                    <a href="#" class="text-center">
+                                        <h4 class="text-secondary">Digital Marketing</h4>
+                                        <p class="m-0 text-white">Marketing Analysis</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
+                        <div class="project-item">
+                            <div class="project-img">
+                                <img src="{%static 'img/project-6.jpg' %}" class="img-fluid w-100 rounded" alt="">
+                                <div class="project-content">
+                                    <a href="#" class="text-center">
+                                        <h4 class="text-secondary">keyword Research</h4>
+                                        <p class="m-0 text-white">keyword Analysis</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> {% endcomment %}
+        <!-- Project End -->
+        {%endblock%}
